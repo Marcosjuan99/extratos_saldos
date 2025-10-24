@@ -1,3 +1,33 @@
+# extratos-comprovantes
+
+Projeto Next.js com exemplo de como fazer uma requisição GET que utiliza uma chave de API armazenada em variáveis de ambiente.
+
+Passos rápidos:
+
+1. Copie o exemplo de ambiente:
+
+	- Renomeie `.env.local.example` para `.env.local`.
+	- Preencha `API_KEY` com sua chave real.
+
+2. Opcional: ajuste `API_BASE_URL` e `API_PATH` no `.env.local` se quiser apontar para outro endpoint.
+
+3. Rode o servidor de desenvolvimento:
+
+```
+npm install
+npm run dev
+```
+
+4. Abra http://localhost:3000 — a página inicial chama `/api/proxy` que injeta a chave do servidor e repassa a resposta.
+
+Segurança:
+
+- Nunca commit seu `.env.local` com chaves reais.
+- A requisição externa com a chave é feita pelo servidor (rota `/api/proxy`), assim a chave não é exposta ao cliente.
+
+Como adaptar:
+
+- Você pode mover a lógica para um helper em `lib/` ou usar `app` server components para buscar diretamente o endpoint externo.
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
