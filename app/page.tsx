@@ -762,7 +762,7 @@ const summaryHtml = isFirstPage
             disabled={loading}
             className="w-full py-2 px-4 border border-transparent rounded-md text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 disabled:opacity-50"
           >
-            {loading ? "Carregando..." : "CONSLUTAR SALDO"}
+            {loading ? "Carregando..." : "CONSUlTAR SALDO"}
           </button>
         </form>
 
