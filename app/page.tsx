@@ -37,8 +37,12 @@ const Home = () => {
     { enterprise: "maunakai", bankaccount: "3026.000130110203" },
     { enterprise: "sculptor", bankaccount: "3026.000130110210" },
     { enterprise: "velli", bankaccount: "3026.000130111084" },
-    { enterprise: "vilaii", bankaccount: "3026.000130111091" },
     { enterprise: "bellatorii", bankaccount: "1136.000130049523" },
+    { enterprise: "vilaii", bankaccount: "3026.000130111091" },
+    { enterprise: "vilaiii", bankaccount: "2491.000130015763" },
+    { enterprise: "sandiego", bankaccount: "2491.000130015749" },
+    { enterprise: "baronconectiii", bankaccount: "2491.000130015756" },
+    { enterprise: "kahakaisaomiguel", bankaccount: "2491.000130015725" },
   ];
 
   const handleEnterpriseSelection = (selectedEnterprise: string) => {
